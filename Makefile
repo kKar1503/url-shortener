@@ -4,6 +4,12 @@ run:
 build:
 	go build -o bin/main cmd/server/main.go
 
+start:
+	./bin/main
+
+clean:
+	rm -rf bin
+
 tidy:
 	go mod tidy
 
