@@ -13,6 +13,7 @@ type NamedMappers struct {
 
 func getImplementedMappers() []NamedMappers {
 	return []NamedMappers{
+		{"BasicURLMapper", func() urlmapper.URLMapper { return urlmapper.NewBasicURLMapper() }},
 	}
 }
 
